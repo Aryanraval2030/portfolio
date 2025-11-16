@@ -333,9 +333,10 @@
 
        .s-3-otr {
            grid-template-columns: auto;
+           gap: 20px;
        }
        .s-3-inr-img{
-        margin-bottom: 10px;
+        margin-bottom: 7px;
        }
 
        .section-3>h2 {
