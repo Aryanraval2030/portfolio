@@ -229,10 +229,11 @@
        border-radius: 10px;
        background-size: cover;
        background-position: center;
-       
+
    }
-   .s-3-inr-img img{
-    border-radius: 10px;
+
+   .s-3-inr-img img {
+       border-radius: 10px;
    }
 
 
@@ -329,10 +330,20 @@
            line-height: 1.3rem;
            font-weight: 100;
        }
-       .s-3-otr{
-        grid-template-columns: auto;
+
+       .s-3-otr {
+           grid-template-columns: auto;
        }
-       .section-3{
-        padding: 0 1rem;
+       .s-3-inr-img{
+        margin-bottom: 10px;
+       }
+
+       .section-3>h2 {
+           margin-bottom: 8vh;
+
+       }
+
+       .section-3 {
+           padding: 0 1rem;
        }
    }
