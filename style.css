@@ -217,10 +217,14 @@
        justify-content: space-around;
    }
 
+   .second_skill {
+       padding: 23px;
+   }
+
    .skills_utr {
        box-shadow: rgba(133, 254, 85, 0.333) 0px 2px 5px -1px, rgba(86, 235, 91, 0.333) 0px 1px 3px -1px;
-       height: 250px;
-       width: 250px;
+       height: 200px;
+       width: 200px;
        border-radius: 10px;
        margin: 59px 0;
 
