@@ -214,7 +214,7 @@
        /* height: 600px; */
        display: flex;
        flex-wrap: wrap;
-       justify-content: space-between;
+       justify-content: space-around;
    }
 
    .skills_utr {
@@ -222,6 +222,8 @@
        height: 250px;
        width: 250px;
        border-radius: 10px;
+       margin: 59px 0;
+
    }
 
    /* section-3 */
@@ -369,9 +371,10 @@
            margin-bottom: 7px;
        }
 
-       .section-3{
-        margin-top: 15vh;
+       .section-3 {
+           margin-top: 15vh;
        }
+
        .section-3>h2 {
            margin-bottom: 4vh;
        }
