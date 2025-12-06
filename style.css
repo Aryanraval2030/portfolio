@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: wheat;
+}
+
+body {
+    background-color: black;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+/*  
+header
+ */
+
+
+header {
+    height: 15vh;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.firstlist {
+    position: relative;
+    height: 37px;
+    width: 100px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 3px 5px;
+    overflow: hidden;
+}
+
+
+.firstlist1 {
+    position: relative;
+    height: 37px;
+    width: 55px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 3px 5px;
+    overflow: hidden;
+}
+
+
+
+.home {
+    position: absolute;
+    left: 0;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 400ms;
+}
+
+.homefist {
+    transform: translateY(0);
+}
+
+.homesec {
+    transform: translateY(100%);
+}
+
+
+.firstlist1:hover .homefist {
+    transform: translateY(-100%);
+}
+
+.firstlist1:hover .homesec {
+    transform: translateY(0%);
+}
+
+
+
+
+
+.home {
+    position: absolute;
+    left: 0;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 400ms;
+}
+
+.home1 {
+    transform: translateY(0);
+}
+
+.home2 {
+    transform: translateY(100%);
+}
+
+
+.firstlist:hover .home1 {
+    transform: translateY(-100%);
+}
+
+.firstlist:hover .home2 {
+    transform: translateY(0%);
+}
+
+li a {
+    display: block;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.resume-btn {
+    padding: 10px 20px;
+    border: 2px solid rgb(103, 103, 103);
+    border-radius: 30px;
+    background-color: black;
+    color: wheat;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+/* 
+dot
+ */
+
+#dot {
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.08s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    position: static;
+    z-index: 12;
+}
+
+.line {
+    height: 2px;
+    width: 25px;
+    animation: first 400ms ease-in alternate infinite;
+    color: rgb(208, 208, 208);
+    transform-origin: left;
+    background-color: white;
+    display: block;
+    margin: 8px;
+}
+
+.line-2 {
+    animation-delay: 150ms;
+}
+
+.line-3 {
+    animation-delay: 300ms;
+}
+
+
+ #background {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* Dot Style */
+        .dot {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgb(2, 65, 255);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px white;
+        }
+
+        
+@keyframes first {
+    0% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(0.5);
+    }
+}
+
+#close {
+    display: none;
+}
+
+/* home */
+
+.home-page{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.home-inr{
+    width: 50%;
+    height: 100%;
+}
+
+
+
+/* responsive */
+@media (max-width:768px) {
+    ul {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        transform: translateX(100%);
+        background-color: rgb(52, 52, 52);
+        z-index: 999;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    #close {
+        color: white;
+        border: 1px solid white;
+        border-radius: 50%;
+        position: absolute;
+        cursor: pointer;
+        font-size: 20px;
+        top: 20px;
+        left: 10px;
+        cursor: pointer;
+        display: block;
+        display: flex;
+        height: 40px;
+        width: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul.show {
+        transform: translateX(0);
+    }
+
+    .resume-btn {
+        display: block;
+        background: transparent;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
